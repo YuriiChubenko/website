@@ -1,0 +1,52 @@
+/* styles/Home.module.css */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #777;
+}
+
+.contactTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contactList li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.contactList strong {
+    color: #000;
+}
