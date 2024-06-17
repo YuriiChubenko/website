@@ -26,6 +26,8 @@ jobs:
         run: npm run deploy
 
       - name: Deploy to deploy branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
