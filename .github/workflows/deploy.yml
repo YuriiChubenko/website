@@ -1,0 +1,35 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: Host deploy
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22'  # Use the desired Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and export
+        run: npm run deploy
+
+      - name: Deploy to deploy branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f out
+          git commit -m "Deploy static site"
+          git push origin `git subtree split --prefix out main`:deploy --force
+
