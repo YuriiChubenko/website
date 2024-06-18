@@ -1,7 +1,13 @@
-import React from 'react';
-import styles from '../styles/NeumorphicBox.module.css'; // Create a CSS module for styling
+// components/NeumorphicBox.tsx
 
-const NeumorphicBox = ({ children }) => {
+import React, { ReactNode } from 'react';
+import styles from '../styles/NeumorphicBox.module.css';
+
+interface NeumorphicBoxProps {
+    children: ReactNode;
+}
+
+const NeumorphicBox: React.FC<NeumorphicBoxProps> = ({ children }) => {
     return (
         <div className={styles.neumorphicBox}>
             {children}
@@ -10,3 +16,4 @@ const NeumorphicBox = ({ children }) => {
 }
 
 export default NeumorphicBox;
+
