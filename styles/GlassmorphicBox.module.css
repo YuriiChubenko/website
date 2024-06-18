@@ -1,0 +1,8 @@
+.glassmorphicBox {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 32px 0 rgb(30, 30, 30);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 40px;
+}

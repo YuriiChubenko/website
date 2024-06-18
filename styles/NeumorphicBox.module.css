@@ -1,0 +1,7 @@
+.neumorphicBox {
+    border-radius: 40px;
+    background: #f8fbfb;
+    box-shadow: -15px 15px 30px #909292,
+        15px -15px 30px #ffffff;
+    padding: 40px;
+}

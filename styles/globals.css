@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg-image: url('../public/bg.jpg');
+  /* Adjust the path if needed */
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  /* For Safari */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
