@@ -1,8 +1,18 @@
 .glassmorphicBox {
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 8px 32px 0 rgb(30, 30, 30);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* existing styles */
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     border-radius: 10px;
-    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 50vh;
 }
